@@ -1,0 +1,126 @@
+#root {
+    width: auto;
+}
+
+.formPage {
+    width: 100%;
+    display: grid;
+    place-items: center;
+    background-color: rgba(227, 245, 249, 0.57);
+    padding: 0%;
+    border-radius: 1.4rem;
+    box-shadow: 1px 1px 8px rgb(123, 181, 194);
+}
+
+.formPage h1 {
+    font-size: 2.5rem;
+    font-family: 'Courier New', Courier, sans-serif;
+    margin-top: 0.6rem;
+}
+
+.infoForm {
+    background-color: rgb(12, 12, 98);
+    height: 50vh;
+    padding: 4% 2%;
+    margin-bottom: 3%;
+    width: 40%;
+    border-radius: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.formfield {
+    position: relative;
+    right: 5%;
+    padding: 0%;
+    margin: 0%;
+    height: 3rem;
+    font-size: 1.2rem;
+    width: 90%;
+    color: white;
+}
+
+.form_label {
+    left: 10%;
+    width: fit-content;
+}
+
+.form_input {
+    height: 2rem;
+    outline: none;
+    width: auto;
+    border: 2px solid rgb(2, 211, 239);
+    border-radius: 0.4rem;
+    background-color: inherit;
+    cursor: auto;
+    color: aliceblue;
+    font-size: 1rem;
+}
+
+.img-feild {
+    position: relative;
+    left: 9%;
+    width: 90%;
+}
+
+@media screen and (max-width : 1236px) {
+    .infoForm {
+        width: 60%;
+    }
+
+    .img-feild {
+        width: 100%;
+        left: 9%;
+    }
+}
+
+.imgInput {
+    height: 2rem;
+    font-size: inherit;
+}
+
+.imgInput::file-selector-button {
+    /* Your custom styles here */
+    height: 2rem;
+    font-size: inherit;
+    background-color: inherit;
+    color: #fff;
+    border: 2px solid rgb(8, 168, 241);
+    border-radius: 0.4rem;
+    cursor: auto;
+}
+
+.submission {
+    border: 3px solid rgb(8, 168, 241);
+    border-radius: 0.8rem;
+    color: aliceblue;
+    background-color: inherit;
+    height: 3rem;
+    width: 60%;
+    font-size: large;
+    cursor: pointer;
+
+    :focus {
+        border: 3px solid rgb(0, 148, 216);
+    }
+}
+
+@media screen and (max-width : 876px) {
+    .formfield {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width : 772px) {
+    .infoForm {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width : 625px) {
+    .infoForm {
+        width: 100%;
+    }
+}
